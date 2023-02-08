@@ -17,8 +17,8 @@ This project is using Cypress and Cucumber as a tool and framework to do automat
 npx cypress run --browser {edge, chrome, firefox} --headless
 
 ## Official
-https://nodejs.org/
-https://www.cypress.io/
-https://cucumber.io/
-https://github.com/badeball/cypress-cucumber-preprocessor/
-https://github.com/bahmutov/cypress-esbuild-preprocessor/
+https://nodejs.org/</br>
+https://www.cypress.io/</br>
+https://cucumber.io/</br>
+https://github.com/badeball/cypress-cucumber-preprocessor/</br>
+https://github.com/bahmutov/cypress-esbuild-preprocessor/</br>
