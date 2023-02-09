@@ -1,0 +1,4 @@
+node_modules
+testSuite.bat
+cypress/videos
+cypress/screenshots
