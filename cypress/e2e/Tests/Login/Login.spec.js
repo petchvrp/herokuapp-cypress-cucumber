@@ -2,8 +2,9 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 beforeEach(() => {
     cy.viewport(1600, 720);
-    cy.visit('/login');
     cy.clearCookies();
+    cy.visit('/login');
+    cy.wait(3000);
     cy.fixture('loginCredential.json').then((loginCredential) => {
         this.loginCredential = loginCredential;
     });

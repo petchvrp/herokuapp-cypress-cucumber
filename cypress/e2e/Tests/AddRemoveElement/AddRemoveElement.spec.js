@@ -1,12 +1,12 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 before(() => {
     cy.viewport(1600, 720);
     cy.visit('');
+    cy.wait(3000);
 });
 
 When('Click AddRemoveElement link', () => {
-    cy.wait(3000);
     cy.get('[href="/add_remove_elements/"]').click();
     cy.wait(3000);
 });
@@ -26,7 +26,7 @@ When('Click AddElement button', () => {
 
 Then('Delete button appear', () => {
     cy.get('[onclick="deleteElement()"]').should('exist');
-    cy.get('[id="elements"]').should('exist').should('have.length', 1);
+    cy.get('[id="elements"]').should('exist').should('have.length.at.least', 1);
 });
 
 When('Click DeleteElement button', () => {

@@ -1,12 +1,14 @@
-import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 before(() => {
     cy.viewport(1600, 720);
     cy.visit('');
+    cy.wait(3000);
 });
 
 When('Click ABTesting link', () => {
     cy.get('[href="/abtest"]').click();
+    cy.wait(3000);
 });
 
 Then('Navigate to ABTesting page', () => {
