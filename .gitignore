@@ -1,4 +1,5 @@
 node_modules
 testSuite.bat
+rebuildDockerTesting.bat
 cypress/videos
 cypress/screenshots
